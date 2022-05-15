@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./src/img/logo.png">
+    <link href="./src/css/style.css" rel="stylesheet">
+    <title>StopWatch</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="digit">
+            <span id="hours">00 :</span>
+            <span id="minutes">00 :</span>
+            <span id="seconds">00 :</span>
+            <span id="milliseconds">00</span>
+        </div>
+        <div id="options" style="margin: auto;width: fit-content;">
+            <button class="btn" id="start" onclick="startTimer()">START</button>
+            <button class="btn" id="stop" onclick="stopTimer()">STOP</button>
+            <button class="btn" id="reset" onclick="resetTimer()">RESET</button>
+            <button class="btn" onclick="setLaps()">LAP</button>
+        </div>
+        <div id="laps">
+        </div>
+    </div>
+    <script src="./src/js/stopwatch.js"></script>
+</body>
+
+</html>
